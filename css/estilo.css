@@ -1,0 +1,334 @@
+.error, div.excepcion {
+	color: red;	
+	border: 2px solid red; 
+	padding: 10px;
+	margin: 10px;
+}
+
+.headerEmpresa  {
+    text-align: left;
+    font: 3em helvetica;
+} 
+
+.strongpass {
+    background-color: green;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    resize: vertical;
+}
+
+.middlepass {
+    background-color: yellow;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    resize: vertical;
+}
+
+.weakpass {
+    background-color: red;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    resize: vertical;
+}
+
+.nanpass {
+    background-color: orange;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    resize: vertical;
+}
+
+body {
+    font: 15px arial, italic;
+}
+
+.menu {
+	text-align: right;
+	padding: 2%;
+	background-color: #fefefe;	
+}
+
+.navegacion {
+	padding: 0.4%;
+	text-transform: uppercase;
+	font-family: Helvetica;
+	display: block;
+    color:  #33cc33;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: right;
+}
+
+#desconectar {
+	color: red;
+}
+
+#nombreUser {
+    color:  black;
+}
+
+#inicio {
+	background-color: black;
+}
+
+.lista {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f3f3f3;
+}
+
+    
+img {
+	max-width:100%;
+	height:auto;    
+}
+
+.table-container
+{
+    width: 100%;
+    overflow-y: auto;
+    _overflow: auto;
+    margin: 0 0 1em;
+}
+
+.table-container::-webkit-scrollbar
+{
+-webkit-appearance: none;
+width: 14px;
+height: 14px;
+}
+
+.table-container::-webkit-scrollbar-thumb
+{
+border-radius: 8px;
+border: 3px solid #fff;
+background-color: rgba(0, 0, 0, .3);
+
+}
+
+.form {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.submit {
+    background-color: #33CC33;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* 2ª Opción y 3ªOp    OPCIÓN 2 ESCOGIDA */
+
+body {margin:0;padding:50px}
+    
+    h2 {font-size:36px;margin:0 0 10px 0}
+    p {margin:0 0 10px 0}
+    
+    table.tablaProductos, table.rwd_auto, table.tablaCarrito, table.tablaPedidos, table.tablaEditar {border:1px solid #ccc;width:100%;margin:0 0 50px 0}
+        .tablaProductos th,.rwd_auto th, .tablaCarrito th, .tablaPedidos th, .tablaEditar th {background:#33cc33;padding:5px;text-align:center;}
+        .tablaProductos td,.rwd_auto td, .tablaCarrito td, .tablaPedidos td, .tablaEditar td {border-bottom:1px solid #ccc;padding:5px;text-align:center}
+        .tablaProductos tr:last-child td, .tablaCarrito tr:last-child td, .rwd_auto tr:last-child td, .tablaPedidos tr:last-child td, .tablaEditar tr:last-child td {border:0}
+        
+    .rwd {width:100%;overflow:auto;}
+        .rwd table.rwd_auto {width:auto;min-width:100%}
+            .rwd_auto th,.rwd_auto td {white-space: nowrap;}
+            
+    @media only screen and (max-width: 760px), (min-width: 768px) and (max-width: 1024px)  
+    {
+            
+        table.tablaProductos, .tablaProductos thead, .tablaProductos tbody, .tablaProductos th, .tablaProductos td, .tablaProductos tr,
+            table.tablaCarrito, .tablaCarrito thead, .tablaCarrito tbody, .tablaCarrito th, .tablaCarrito td, .tablaCarrito tr,
+            table.tablaPedidos, .tablaPedidos thead, .tablaPedidos tbody, .tablaPedidos th, .tablaPedidos td, .tablaPedidos tr,
+            table.tablaEditar, .tablaEditar thead, .tablaEditar tbody, .tablaEditar th, .tablaEditar td, .tablaEditar tr { display: block; }
+                
+        .tablaProductos thead tr, .tablaCarrito thead tr, .tablaPedidos thead tr, .tablaEditar thead tr { position: absolute;top: -9999px;left: -9999px; }
+                
+        .tablaProductos tr, .tablaCarrito tr, .tablaPedidos tr, .tablaEditar tr { border: 1px solid #ccc; }
+                
+        .tablaProductos td, .tablaCarrito td, .tablaPedidos td, .tablaEditar td { border: none;border-bottom: 1px solid #ccc; position: relative;padding-left: 50%;text-align:left }
+            
+        .tablaProductos td:before {  position: absolute; top: 6px; left: 6px; width: 45%; padding-right: 10px; white-space: nowrap;}
+        .tablaCarrito td:before {  position: absolute; top: 6px; left: 6px; width: 45%; padding-right: 10px; white-space: nowrap;}
+        .tablaPedidos td:before {  position: absolute; top: 6px; left: 6px; width: 45%; padding-right: 10px; white-space: nowrap;}
+        .tablaEditar td:before {  position: absolute; top: 6px; left: 6px; width: 45%; padding-right: 10px; white-space: nowrap;}
+        
+        .tablaProductos td:nth-of-type(1):before { content: "Foto"; color:#33cc33; }
+        .tablaProductos td:nth-of-type(2):before { content: "Nombre"; color:#33cc33; }
+        .tablaProductos td:nth-of-type(3):before { content: "Descripción"; color:#33cc33; }
+        .tablaProductos td:nth-of-type(4):before { content: "Precio"; color:#33cc33; }
+        .tablaProductos td:nth-of-type(5):before { content: "Stock"; color:#33cc33; }
+        .tablaProductos td:nth-of-type(6):before { content: "¡Compra!"; color:#33cc33; }
+                
+        .tablaCarrito td:nth-of-type(1):before { content: "Producto"; color:#33cc33; }
+        .tablaCarrito td:nth-of-type(2):before { content: "Cantidad"; color:#33cc33; }
+        .tablaCarrito td:nth-of-type(3):before { content: "Precio"; color:#33cc33; }
+        .tablaCarrito td:nth-of-type(4):before { content: "¿Quieres eliminarlo?"; color:#33cc33; }
+
+        .tablaPedidos td:nth-of-type(1):before { content: "Producto"; color:#33cc33; }
+        .tablaPedidos td:nth-of-type(2):before { content: "Cantidad"; color:#33cc33; }
+        .tablaPedidos td:nth-of-type(3):before { content: "Precio"; color:#33cc33; }
+
+        .tablaEditar td:nth-of-type(1):before { content: "Foto"; color:#33cc33; } 
+        .tablaEditar td:nth-of-type(2):before { content: "Producto"; color:#33cc33; }
+        .tablaEditar td:nth-of-type(3):before { content: "Descripción"; color:#33cc33; }
+        .tablaEditar td:nth-of-type(4):before { content: "Precio"; color:#33cc33; }
+        .tablaEditar td:nth-of-type(5):before { content: "Stock"; color:#33cc33; }
+        .tablaEditar td:nth-of-type(6):before { content: "Editar"; color:#33cc33; }
+        .tablaEditar td:nth-of-type(7):before { content: "Eliminar"; color:#33cc33; }
+                
+        .descarto {display:none;}
+        .fontsize {font-size:10px}
+    }
+    
+    /* Smartphones (portrait and landscape) ----------- */
+    @media only screen and (min-width : 320px) and (max-width : 480px) 
+    {
+        body { width: 320px; }
+        .descarto {display:none;}
+    }
+    
+    /* iPads (portrait and landscape) ----------- */
+    @media only screen and (min-width: 768px) and (max-width: 1024px) 
+    {
+        body { width: 495px; }
+        .descarto {display:none;}
+        .fontsize {font-size:10px}
+    }
+    
+    /* Smartphones (portrait and landscape) ----------- */
+    @media only screen and (min-width : 320px) and (max-width : 480px) 
+    {
+        body { width: 320px; }
+        .descarto {display:none;}
+    }
+    
+    /* iPads (portrait and landscape) ----------- */
+    @media only screen and (min-width: 768px) and (max-width: 1024px) 
+    {
+        body { width: 495px; }
+        .descarto {display:none;}
+        .fontsize {font-size:10px}
+    }
+
+	/*input*/
+	
+	@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=number] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+input[type=number] {
+  background-color: #33cc33;
+  color: white;
+  padding: 3px 5px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  float: right;
+}
+
+.banner{
+	margin-left: 10%;
+}
+
+.recuadro {
+    border: 1px solid black;
+    outline-style: double;
+    outline-color: #33CC33;
+    background-color: #33CC33;
+    padding: 0.5%;
+    margin: 20px
+}
+
+p {
+	line-height: 20px;
+	margin: 20px;
+	font-size: 17px
+}
+
+#map {
+    margin-left: 25%
+}
+
+.cajon {
+	border: 1px solid black;
+	outline-style: double;
+    outline-color: green;
+    padding: 0.5%;
+    margin: 20px
+}
+
+.subrayado {  
+    padding: 0.4%;
+	text-transform: uppercase;
+	font-family: Helvetica;
+    color: #FF0000;
+    border-bottom: 1px solid #33cc33;
+	padding: 0.5%;
+    margin: 18px;
+    font-size: 17px;
+}
+
+.pie {
+	text-align: right;
+}
+
+.paginacion {
+    margin: 1%
+}
